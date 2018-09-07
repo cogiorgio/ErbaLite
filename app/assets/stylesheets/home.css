@@ -19,8 +19,11 @@ li a {
     text-decoration: none;
 }
 
-li a:hover:not(.active) {
+li a.clickable:hover:not(.active) {
     background-color: #111;
+}
+.clickable{
+    
 }
 
 .active {

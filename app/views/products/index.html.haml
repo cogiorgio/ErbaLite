@@ -10,11 +10,14 @@
         %a{:href=>"http://127.0.0.1:3000/products"}
           Erba Lite
           %i.fas.fa-cannabis.fa-lg{:style => "color:green;"}
-      %li.menu
-        %a Log in
       %li.menu{:onclick=>"visible();",:id=>"press"}
-        %a
-          %i.fas.fa-shopping-cart.fa-lg{:style => "color:white; " }
+        %a.clickable
+          %i.fas.fa-shopping-bag.fa-lg{:style => "color:white; " }
+          .menu#counter{:style => "margin-left:5px;"} 0
+      %li.menu
+        %a.clickable Chi siamo
+      %li.menu
+        %a.clickable Home
     %div{:style => "position:fixed; top:10%;left:81%;width:18%; background-color:white; border-radius:5px;display:none;" ,:id=>"cart"}
       %form{:id=>"shop", :action =>"http://127.0.0.1:3000/orders", :method=>"post"}
         %input{:type=>"submit",:value=>"acquista", :style =>"background-color:white; margin-left:35%; color:green;"}
@@ -43,7 +46,6 @@
             %i.fas.fa-cart-plus.fa-lg{:style => "color:green;"}
           %select.sel{:id => "selAmnesia"}
             %option 1 gr
-            %option 1,5 gr
             %option 3 gr
             %option 5 gr
       .separation
