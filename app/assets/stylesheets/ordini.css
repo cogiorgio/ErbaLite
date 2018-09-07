@@ -1,0 +1,15 @@
+.ordini{
+	margin-left:5%;
+}
+.numero{
+	width:50px;
+}
+.riassunto{
+	width:94%;border-radius: 10px;border:solid;border-width: 1px;margin-left: 3%; border-color: blue;
+}
+.m1{
+	margin-left: 1%;
+}
+.procedi{
+	margin-left: 70%; border-radius:4px; background-color: white; color:blue;
+}

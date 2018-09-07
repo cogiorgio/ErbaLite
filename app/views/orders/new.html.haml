@@ -1,0 +1,74 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %link{:crossorigin => "anonymous", :href => "https://use.fontawesome.com/releases/v5.2.0/css/all.css", :integrity => "sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ", :rel => "stylesheet"}/
+    %link{:href => "/home/biar/Desktop/ErbaLite/app/assets/stylesheets/home.css", :rel => "stylesheet"}/
+    %link{:href => "/home/biar/Desktop/ErbaLite/app/assets/stylesheets/ordini.css", :rel => "stylesheet"}/
+  %body
+    %ul
+      %li.logo.active
+        %a{:href=>"http://127.0.0.1:3000/products"}
+          Erba Lite
+          %i.fas.fa-cannabis.fa-lg{:style => "color:green;"}
+      %li.menu
+        %a Log out
+      %li.menu
+        %a
+          %i.fas.fa-user-alt.fa-lg{:style => "color:white; "}
+      %li.menu
+        %a
+          %i.fas.fa-shopping-cart.fa-lg{:style => "color:white; "}
+    .centro
+      .divprod
+        %h1.prod Pagamento
+      .ordini
+        %p
+          %u Seleziona il metodo di spedizione:
+        %input{:name => "spedizione1", :type => "radio", :value => "spedizone1"}/
+        %label{:for => "spedizione1"} spedizione1
+        %input{:name => "spedizione1", :type => "radio", :value => "spedizone2"}/
+        %label{:for => "spedizione2"} spedizione2
+        %p
+          %u Inserisci l'indirizzo di spedizione:
+        %form
+          Provincia
+          %br/
+          %input#provincia{:type => "text"}/
+          %br/
+          Comune
+          %br/
+          %input#comune{:type => "text"}/
+          %br/
+          CAP
+          %br/
+          %input#cap{:maxlength => "5", :type => "text"}/
+          %br/
+          Via
+          %br/
+          %input#via{:type => "text"}/
+          %br/
+          Numero
+          %br/
+          %input#numero.numero{:type => "text"}/
+      .riassunto
+        %p.m1
+          %u Riassunto ordine:
+          %br/
+          %br/
+          Prodotto uno +5.00 euro
+          %br/
+          Prodotto due +7.00 euro
+          %br/
+          Spedizione +12.00 euro
+          %br/
+          %b Totale: 24.00 euro
+          %br/
+        %input.procedi{:type => "submit", :value => "procedi al pagamento"}/
+        %br/
+        .separation
+          %p
+      .separation
+        %p
+    .contatti
+      CONTATTI

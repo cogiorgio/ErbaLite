@@ -1,0 +1,51 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %link{:crossorigin => "anonymous", :href => "https://use.fontawesome.com/releases/v5.2.0/css/all.css", :integrity => "sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ", :rel => "stylesheet"}/
+
+  %body
+    %ul
+      %li.logo.active
+        %a{:href=>"http://127.0.0.1:3000/products"}
+          Erba Lite
+          %i.fas.fa-cannabis.fa-lg{:style => "color:green;"}
+      %li.menu
+        %a Log in
+      %li.menu{:onclick=>"visible();",:id=>"press"}
+        %a
+          %i.fas.fa-shopping-cart.fa-lg{:style => "color:white; " }
+    %div{:style => "position:fixed; top:10%;left:81%;width:18%; background-color:white; border-radius:5px;display:none;" ,:id=>"cart"}
+      %form{:id=>"shop", :action =>"http://127.0.0.1:3000/orders", :method=>"post"}
+        %input{:type=>"submit",:value=>"acquista", :style =>"background-color:white; margin-left:35%; color:green;"}
+    .centro
+      .divprod
+        %h1.prod Products
+      = image_tag("prova1.jpg",class:"imagecanna")
+      .post
+        .left
+          = image_tag("cannabis.jpg",class:"prodimg")
+        .right
+          .head    
+            %h1#NomeProd.tfont
+              %b Amnesia
+          .head    
+            %h1#NomeProd.tfont
+              %b CBD:
+              5%
+          .desc
+            %p#NomeProd.tfont.rtable
+              %b> Description:
+              descrizione prodotto aaaaaaaaaaaaaaaaaaaaaaaaaaaa
+              aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+          %button{:style => "border:none;background-color:white; float:right; margin-right:3%;",:onclick => "addcart(this.id)", :id=>"Amnesia"}
+            %i.fas.fa-cart-plus.fa-lg{:style => "color:green;"}
+          %select.sel{:id => "selAmnesia"}
+            %option 1 gr
+            %option 1,5 gr
+            %option 3 gr
+            %option 5 gr
+      .separation
+    .contatti
+      CONTATTI
