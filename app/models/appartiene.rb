@@ -1,0 +1,2 @@
+class Appartiene < ApplicationRecord
+end

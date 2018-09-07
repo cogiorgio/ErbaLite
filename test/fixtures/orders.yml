@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  data: 2018-09-07
+  costo: 1.5
+  spedizione: 1.5
+  indirizzo: MyString
+  citta: MyString
+  cap: MyString
+
+two:
+  data: 2018-09-07
+  costo: 1.5
+  spedizione: 1.5
+  indirizzo: MyString
+  citta: MyString
+  cap: MyString

@@ -1,0 +1,15 @@
+class CreateOrders < ActiveRecord::Migration[5.1]
+  def change
+    create_table :orders do |t|
+      t.date :data
+      t.float :costo
+      t.float :spedizione
+      t.string :indirizzo
+      t.string :citta
+      t.string :cap
+      
+
+      t.timestamps
+    end
+  end
+end
